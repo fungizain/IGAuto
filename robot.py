@@ -9,16 +9,14 @@ from action import like_comment
 def robot(username, password, **kwargs):
     driver = config.DRIVER
     timeout = config.TIMEOUT
-    
     login(username, password)
     driver.implicitly_wait(timeout)
-    
     for _ in kwargs.keys():
         search(_)
         for k, v in kwargs[_].items():
-            article(k)
-            like_comment(v)
-        time.sleep(5)
+            # article(k)
+            # like_comment(v)
+            time.sleep(5)
             
     #driver.close()
 

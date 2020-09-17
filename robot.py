@@ -23,8 +23,8 @@ def robot(username, password, **kwargs):
 #-----------test-----------
     
 if __name__ == "__main__":
-    username = 'pm280090'
-    password = 'priya1234'
+    username = 'username'
+    password = 'passwd'
     
     blank_dict = {}
     for i in range(5):

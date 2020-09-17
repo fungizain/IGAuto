@@ -113,9 +113,9 @@ def like_comment(like=False, comment=False, sentence='so cute!!', t=5):
 #-----------test-----------
 
 if __name__ == '__main__':
-    username = 'pm280090'
-    password = 'priya1234'
-    target = 'hangrydiary'
+    username = 'username'
+    password = 'password'
+    target = 'target'
     login(username, password)
     search(target)
     follow()

@@ -113,13 +113,5 @@ def like_comment(like=False, comment=False, sentence='so cute!!', t=5):
 #-----------test-----------
 
 if __name__ == '__main__':
-    username = 'username'
-    password = 'password'
-    target = 'target'
-    login(username, password)
-    search(target)
-    follow()
-    article(1)
-    like_comment()
-    
+    ...
     

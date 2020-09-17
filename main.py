@@ -1,10 +1,6 @@
-import config
 import time
-from action import login
-from action import explore, search
-from action import follow, article
-from action import like_comment
-
+import config
+from action import *
 
 def robot(username, password, **kwargs):
     driver = config.DRIVER
@@ -14,11 +10,11 @@ def robot(username, password, **kwargs):
     for _ in kwargs.keys():
         search(_)
         for k, v in kwargs[_].items():
-            # article(k)
-            # like_comment(v)
+            article(k)
+            like_comment(v)
             time.sleep(5)
             
-    #driver.close()
+    driver.close()
 
 #-----------test-----------
     
